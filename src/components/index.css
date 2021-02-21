@@ -1,0 +1,25 @@
+/*--------------------------------------------------------------------------------------------------------------- 
+
+                                        page-content
+
+---------------------------------------------------------------------------------------------------------------*/
+.page-content-active {
+  width: calc(100% - 15rem);
+  margin-left: 15rem;
+  transition: all 0.5s;
+}
+.page-content {
+  width: 100%;
+  transition: all 0.5s;
+}
+@media (min-width: 1278px) {
+  .page-content-active {
+    width: calc(100% - 30rem);
+    margin-left: 30rem;
+  }
+}
+@media (max-width: 768px) {
+  .page-content-active {
+    margin-left: 100%;
+  }
+}

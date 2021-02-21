@@ -1,0 +1,207 @@
+/*----------------------------------------------------------------------------------------------------------- 
+
+                                Social Media
+
+-----------------------------------------------------------------------------------------------------------*/
+
+.socialMedia li a i {
+  font-size: 2.5rem;
+  color: #233061;
+}
+.socialMedia li a i:hover {
+  color: #68749e;
+}
+
+/*----------------------------------------------------------------------------------------------------------- 
+
+                                Favorite
+
+-----------------------------------------------------------------------------------------------------------*/
+
+.fa-heart {
+  color: red;
+  cursor: pointer;
+}
+.fa-heart:hover {
+  color: rgb(199, 5, 5);
+}
+
+/*--------------------------------------------------------------------------------------------------------------- 
+
+                                Cart
+
+---------------------------------------------------------------------------------------------------------------*/
+
+.fa-cart-plus,
+.fa-cart-arrow-down {
+  color: #525252;
+  cursor: pointer;
+}
+.fa-cart-plus:hover,
+.fa-cart-arrow-down:hover {
+  color: #1d1d1d;
+}
+
+/*--------------------------------------------------------------------------------------------------------------- 
+
+                                Review
+
+---------------------------------------------------------------------------------------------------------------*/
+
+.review,
+.review-static {
+  position: relative;
+  font-size: 1.5rem;
+  color: #f9f211;
+  direction: rtl;
+}
+.review-Opacity {
+  position: absolute;
+  opacity: 0.5;
+}
+.review:hover > .review-Opacity {
+  opacity: 0;
+}
+.review-static span {
+  padding: 0 2px;
+}
+.review .star-empty {
+  display: block;
+  transition: ease 0.5s;
+}
+.review .star-empty::before,
+.review-static .star-empty::before {
+  content: "\f005";
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+}
+.review .star-1,
+.review .star-2,
+.review .star-3,
+.review .star-4,
+.review .star-5 {
+  position: relative;
+  cursor: pointer;
+  padding: 0 2px;
+}
+.review .star-half::before,
+.review .star-full::before {
+  content: "|";
+  opacity: 0;
+}
+.review .star-half,
+.review .star-empty,
+.review .star-full {
+  line-height: unset;
+}
+.review .star-half,
+.review .star-full {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.review .star-half {
+  width: 50%;
+  z-index: 2;
+}
+.review .star-full {
+  width: 100%;
+}
+.review .star-empty:hover {
+  transform: scale(1.2);
+}
+.review .star-empty:hover > .star-half:hover ~ .star-full::before {
+  font-weight: 900;
+  content: "\F5c0";
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  opacity: 1;
+}
+.review .star-empty:hover > .star-full:hover::before {
+  content: "\F005";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  opacity: 1;
+}
+.review > .star-empty:hover ~ .star-empty::before {
+  content: "\F005";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------------------------------------------------------- 
+
+                                Loading
+
+---------------------------------------------------------------------------------------------------------------*/
+
+body > #app > .loading {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  height: 100vh !important;
+  z-index: 1000;
+}
+.loading {
+  font-weight: 900;
+  font-size: 2rem;
+  z-index: 100;
+  margin: auto;
+  box-shadow: 0 -16px 0px #9e9e9e;
+}
+.loading span {
+  margin: 0 5px;
+  animation: blur-effect 3s linear infinite;
+}
+.loading span:nth-child(1) {
+  animation-delay: 0s;
+}
+.loading span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.loading span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.loading span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.loading span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.loading span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.loading span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.loading span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.loading span:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.loading span:nth-child(10) {
+  animation-delay: 0.9s;
+}
+.loading span:nth-child(11) {
+  animation-delay: 1.1s;
+}
+@keyframes blur-effect {
+  0% {
+    filter: blur(0);
+  }
+  40% {
+    filter: blur(20px);
+  }
+  80% {
+    filter: blur(0);
+  }
+  100% {
+    filter: blur(0);
+  }
+}
