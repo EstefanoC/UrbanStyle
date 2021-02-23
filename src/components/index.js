@@ -47,7 +47,7 @@ const Index = () => {
                         <Route path='/buscador'>
                             <Buscador />
                         </Route>
-                        <Route path='/' exact>
+                        <Route path='/'>
                             <Home />
                         </Route>
                         <Route component={Error404} />
