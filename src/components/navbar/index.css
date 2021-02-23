@@ -1035,15 +1035,6 @@
   .vertical-nav .nav .nav-link ul li {
     padding: 1rem 5rem;
   }
-  .vertical-nav .nav .nav-item .dropdown-on:first-child {
-    height: 300px;
-  }
-  .vertical-nav .nav .nav-item .dropdown-on {
-    height: 300px;
-  }
-  .vertical-nav .nav .nav-item .dropdown-on-height {
-    height: 430px;
-  }
 
   /* horizont nav  */
 
