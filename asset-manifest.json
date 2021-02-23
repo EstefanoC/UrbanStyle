@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/UrbanStyle/static/css/main.e8f13542.chunk.css",
+    "main.css": "/UrbanStyle/static/css/main.962ab3fa.chunk.css",
     "main.js": "/UrbanStyle/static/js/main.b62a73f1.chunk.js",
     "main.js.map": "/UrbanStyle/static/js/main.b62a73f1.chunk.js.map",
     "runtime-main.js": "/UrbanStyle/static/js/runtime-main.d18ec3e6.js",
@@ -10,7 +10,7 @@
     "static/js/2.8d95cb59.chunk.js.map": "/UrbanStyle/static/js/2.8d95cb59.chunk.js.map",
     "index.html": "/UrbanStyle/index.html",
     "static/css/2.2b387150.chunk.css.map": "/UrbanStyle/static/css/2.2b387150.chunk.css.map",
-    "static/css/main.e8f13542.chunk.css.map": "/UrbanStyle/static/css/main.e8f13542.chunk.css.map",
+    "static/css/main.962ab3fa.chunk.css.map": "/UrbanStyle/static/css/main.962ab3fa.chunk.css.map",
     "static/js/2.8d95cb59.chunk.js.LICENSE.txt": "/UrbanStyle/static/js/2.8d95cb59.chunk.js.LICENSE.txt",
     "static/media/index.css": "/UrbanStyle/static/media/Carousel3.312e5a31.jpg",
     "static/media/gallery1.jpg": "/UrbanStyle/static/media/gallery1.bf848b27.jpg",
@@ -81,7 +81,7 @@
     "static/js/runtime-main.d18ec3e6.js",
     "static/css/2.2b387150.chunk.css",
     "static/js/2.8d95cb59.chunk.js",
-    "static/css/main.e8f13542.chunk.css",
+    "static/css/main.962ab3fa.chunk.css",
     "static/js/main.b62a73f1.chunk.js"
   ]
 }
