@@ -6,6 +6,7 @@ import CuponForm from './cupon-form'
 
 const Cupon = () => (
     <div className="row d-flex justify-content-center align-items-center">
+        <div className="cupon-bg"></div>
         <div className="col-12 col-md-5 col-lg-6 p-3">
             <p className="cupon-text mb-0 text-center text-light">
                 <strong className="display-4 d-block mb-2">¡Aprovecha!</strong>

@@ -19,6 +19,10 @@
   }
 }
 @media (max-width: 768px) {
+  .page-content,
+  .page-content-active {
+    overflow-x: hidden;
+  }
   .page-content-active {
     margin-left: 100%;
   }

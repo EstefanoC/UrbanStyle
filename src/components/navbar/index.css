@@ -974,7 +974,7 @@
 
 .banner {
   position: relative;
-  background: no-repeat 100% 20% / cover url(../../media/Banner.jpg);
+  background: no-repeat 50% 20% / cover url(../../media/Banner.jpg);
   height: 500px;
 }
 .border-bottom-style {
