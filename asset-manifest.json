@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/UrbanStyle/static/css/main.c44c92be.chunk.css",
-    "main.js": "/UrbanStyle/static/js/main.fe611f80.chunk.js",
-    "main.js.map": "/UrbanStyle/static/js/main.fe611f80.chunk.js.map",
+    "main.js": "/UrbanStyle/static/js/main.99484e38.chunk.js",
+    "main.js.map": "/UrbanStyle/static/js/main.99484e38.chunk.js.map",
     "runtime-main.js": "/UrbanStyle/static/js/runtime-main.d18ec3e6.js",
     "runtime-main.js.map": "/UrbanStyle/static/js/runtime-main.d18ec3e6.js.map",
     "static/css/2.2b387150.chunk.css": "/UrbanStyle/static/css/2.2b387150.chunk.css",
@@ -82,6 +82,6 @@
     "static/css/2.2b387150.chunk.css",
     "static/js/2.665a305e.chunk.js",
     "static/css/main.c44c92be.chunk.css",
-    "static/js/main.fe611f80.chunk.js"
+    "static/js/main.99484e38.chunk.js"
   ]
 }
