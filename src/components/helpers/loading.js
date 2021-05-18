@@ -5,7 +5,7 @@ const Loading = (props) => (
   (props.load) ?
     <></>
   :
-    <div className="loading text-center w-100 h-100 bg-primary py-5">
+    <div className="loading text-center w-100 h-100 py-5">
 
       <span className="words">C</span>
       <span className="words">A</span>

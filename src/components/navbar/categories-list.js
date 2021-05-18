@@ -18,10 +18,10 @@ const CategoriesList = ({switchState, load, id, dropdown, name, icon, gender, na
         let tagName = event.target.tagName
 
         if (tagName === 'A' || tagName === 'I') {
-           return null
+            return null
         } else {
             if (navDropdown[id][0].state) {
-                setNavDropdown(prev => ({...prev, 
+                setNavDropdown(prev => ({...prev,
                     [id]: [{
                             state: false,
                             arrow: 'fas fa-arrow-down',
@@ -29,7 +29,7 @@ const CategoriesList = ({switchState, load, id, dropdown, name, icon, gender, na
                         }]
                 }))
             } else {
-                setNavDropdown(prev => ({...prev, 
+                setNavDropdown(prev => ({...prev,
                     [id]: [{
                             state: true,
                             arrow: 'fas fa-arrow-down rotate',
@@ -48,7 +48,7 @@ const CategoriesList = ({switchState, load, id, dropdown, name, icon, gender, na
             }
         }
     }
-    
+
 
     const addNavDropdownId = (value) => {
         return dropId.some(elem => elem === value) ? false : dropId.push(value)
@@ -58,7 +58,7 @@ const CategoriesList = ({switchState, load, id, dropdown, name, icon, gender, na
     const addNavDropdownState = (value) => {
         dropId.forEach( id => {
             if (navDropdown[value] === undefined && id === value) {
-                setNavDropdown(prev => ({...prev, 
+                setNavDropdown(prev => ({...prev,
                     [id]: [{
                             state: false,
                             arrow: 'fas fa-arrow-down',
@@ -78,7 +78,7 @@ const CategoriesList = ({switchState, load, id, dropdown, name, icon, gender, na
 
     return (
             (load) ?
-               id.map( (value, index) => {
+                id.map( (value, index) => {
                     dropItems = []
                     getSwitchState()
 
@@ -106,7 +106,7 @@ const CategoriesList = ({switchState, load, id, dropdown, name, icon, gender, na
                                             <ul className={navDropdown[value][0].menu}>
                                                 {
                                                     dropItems.map( (val) => (
-                                                        <li className="nav-link" key={`${value}${val}`}><Link to={`/buscador/${dropdown.name[val]}`} className="text-white" onClick={() => handleOnClickLink(name[index])}>{dropdown.name[val]}</Link></li>
+                                                        <li className="nav-link" key={`${value}${val}`}><Link to={`/buscador/${dropdown.name[val]}`} className="text-white" onClick={() => handleOnClickLink(dropdown.name[val])}>{dropdown.name[val]}</Link></li>
                                                     ))
                                                 }
                                             </ul>
@@ -122,7 +122,7 @@ const CategoriesList = ({switchState, load, id, dropdown, name, icon, gender, na
                                                 <ul className={navDropdown[value][0].menu}>
                                                     {
                                                         dropItems.map( (val) => (
-                                                            <li className="nav-link" key={`${value}${val}`} style={(dropdown.gender[val] === genderState || dropdown.gender[val] === 'unisex') ? {display: 'block'} : {display: 'none'}}><Link to={`/buscador/${dropdown.name[val]}`} className="text-white" onClick={() => handleOnClickLink(name[index])}>{dropdown.name[val]}</Link></li>
+                                                            <li className="nav-link" key={`${value}${val}`} style={(dropdown.gender[val] === genderState || dropdown.gender[val] === 'unisex') ? {display: 'block'} : {display: 'none'}}><Link to={`/buscador/${dropdown.name[val]}`} className="text-white" onClick={() => handleOnClickLink(dropdown.name[val])}>{dropdown.name[val]}</Link></li>
                                                         ))
                                                     }
                                                 </ul>
@@ -161,7 +161,7 @@ const mapStateToDispatch = dispatch => ({
             e,
             navbar
         })
-    }, 
+    },
     navbarToggleState(navbar) {
         dispatch({
             type:"TogglerState",

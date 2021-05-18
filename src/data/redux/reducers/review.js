@@ -60,7 +60,6 @@ const reducer = (state = initialState, {type, click, review}) => {
                     }
                 } else {
                     numberStar = numberStar - 2
-                    console.log(numberStar)
 
                     function Uptate() {
                         return (

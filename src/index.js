@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// Component 
+// Component
 import Index from './components/';
 
 // Styles

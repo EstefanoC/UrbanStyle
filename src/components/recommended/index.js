@@ -24,27 +24,25 @@ class Recommended extends Component {
         }
     }
 
-    componentDidMount() {
-        const refer = firestore.collection('productos')
+    async componentDidMount() {
+        const refer = await firestore.collection('productos').get()
         let items = []
-    
-        refer.onSnapshot((querySnapshot) => {
-            querySnapshot.forEach((doc) => {
-                items.push(doc.data())
-            })
-            items.forEach((value, index) => {
-                this.setState({
-                    id: [...this.state.id, ++index],
-                    name: [...this.state.name, value.name],
-                    price: [...this.state.price, value.price ],
-                    average: [...this.state.average, value.average]
-                })
-            })
+
+        refer.forEach(doc => {
+            items.push(doc.data())
+        })
+        items.forEach((value, index) => {
             this.setState({
-                load: true
+                id: [...this.state.id, ++index],
+                name: [...this.state.name, value.name],
+                price: [...this.state.price, value.price ],
+                average: [...this.state.average, value.average]
             })
         })
-    } 
+        this.setState({
+            load: true
+        })
+    }
 
     render() {
         return(
@@ -53,11 +51,11 @@ class Recommended extends Component {
                 <h2 className="text-capitalize display-4 text-center mb-4">Top en compras</h2>
 
                 <div className="row justify-content-center">
-                    <RecommendedCard 
-                        id={this.state.id} 
-                        name={this.state.name} 
-                        price={this.state.price} 
-                        average={this.state.average} 
+                    <RecommendedCard
+                        id={this.state.id}
+                        name={this.state.name}
+                        price={this.state.price}
+                        average={this.state.average}
                         load={this.state.load}
                     />
                 </div>

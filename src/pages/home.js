@@ -20,7 +20,7 @@ const Home = ({navbar}) => {
                 <Carousel />
                 <Recommended />
                 <Cupon />
-                <Gallery /> 
+                <Gallery />
             </main>
             <Footer />
         </div>

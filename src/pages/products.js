@@ -29,10 +29,10 @@ class Productos extends Component {
         }
     }
 
-    componentWillMount () {
+    componentDidMount () {
         const refer = firestore.collection('productos')
         let items = []
-    
+
         refer.onSnapshot((querySnapshot) => {
             querySnapshot.forEach((doc) => {
                 items.push(doc.data())
@@ -52,17 +52,17 @@ class Productos extends Component {
                 load: true
             })
         })
-    } 
+    }
 
     render() {
         return(
             <div className={this.props.navbar.page.class} id="page-content">
                 <Navbar />
                 <main>
-                    <Product 
+                    <Product
                         load={this.state.load}
                         dbState = {this.state}
-                    /> 
+                    />
                 </main>
                 <Footer />
             </div>

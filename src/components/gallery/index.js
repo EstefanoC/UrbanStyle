@@ -21,11 +21,10 @@ class Gallery extends Component {
         }
     }
 
-
     componentDidMount () {
         const refer = firestore.collection('clientes')
         let items = []
-    
+
         refer.onSnapshot((querySnapshot) => {
             querySnapshot.forEach((doc) => {
                 items.push(doc.data())
@@ -40,7 +39,7 @@ class Gallery extends Component {
                 )
             })
         })
-    }   
+    }
 
 
     render () {
@@ -58,6 +57,6 @@ class Gallery extends Component {
             </section>
         )
     }
-} 
+}
 
 export default Gallery

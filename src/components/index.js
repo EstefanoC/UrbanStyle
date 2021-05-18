@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react'
 
 // Dependencias
-import 'bootstrap/dist/css/bootstrap.css'; 
+import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 // React router
@@ -21,6 +21,9 @@ import Buscador from '../pages/searching'
 import Productos from '../pages/products'
 import Error404 from '../pages/error404'
 import Loading from '../components/helpers/loading'
+import Cart from '../pages/cart.js'
+import Favorite from '../pages/favorite.js'
+import User from '../pages/user.js'
 
 const Index = () => {
     const [load, setLoad] = useState(false)
@@ -28,7 +31,7 @@ const Index = () => {
 
     useEffect(() => {
         setLoad(true)
-    })
+    }, [])
 
 
     if (!load) {
@@ -46,6 +49,15 @@ const Index = () => {
                         </Route>
                         <Route path='/buscador'>
                             <Buscador />
+                        </Route>
+                        <Route path='/carrito'>
+                            <Cart />
+                        </Route>
+                        <Route path='/favoritos'>
+                            <Favorite />
+                        </Route>
+                        <Route path='/registro'>
+                            <User />
                         </Route>
                         <Route path='/'>
                             <Home />

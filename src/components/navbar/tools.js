@@ -6,6 +6,9 @@ import { connect } from 'react-redux'
 // React-Router
 import { withRouter } from 'react-router-dom'
 
+// Components
+import ToolsStore from '../toolsStore/index.js'
+
 
 const Tools = ({history, search, navbar, handleOnChangeSearch}) => {
 
@@ -30,10 +33,8 @@ const Tools = ({history, search, navbar, handleOnChangeSearch}) => {
 
         <div className="d-inline-block">
             <ul className="list-unstyled d-flex mb-0">
-                <li><i className="fa fa-shopping-cart" title="Carrito"><span className="sr-only">Cart</span></i></li>
-                <li><i className="fa fa-heart" title="Favoritos"><span className="sr-only">Favorito</span></i></li>
-                <li><i className="fa fa-user" title="Usuario"><span className="sr-only">Usuario</span></i></li>
-            </ul> 
+                <ToolsStore />
+            </ul>
         </div>
 
     </div>

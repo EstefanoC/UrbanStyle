@@ -47,8 +47,8 @@ const RecommendedCard = (props) => (
             <article className="col-12 col-sm-5 col-md-3 col-lg-2 card mb-3" key={props.id[value-1]}>
               <figure>
                 <div className="card-top">
-                  <Favorite />
-                  <Cart />
+                  <Favorite id={props.id[value-1]} name={props.name[value-1]} price={props.price[value-1]} />
+                  <Cart id={props.id[value-1]} name={props.name[value-1]} price={props.price[value-1]}/>
                   <LazyLoadImage
                       className="card-img-top img-fluid"
                       alt={props.name[value-1]}
@@ -64,7 +64,7 @@ const RecommendedCard = (props) => (
                     <p className="card-title text-uppercase">{props.name[value-1]}</p>
                   </Link>
                   <strong className="card-text ml-2">{props.price[value-1]}$</strong>
-                </figcaption> 
+                </figcaption>
               </figure>
             </article>
           )

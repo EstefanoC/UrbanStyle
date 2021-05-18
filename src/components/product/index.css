@@ -60,3 +60,39 @@
 .producto .producto-informacion .fav-cart {
   font-size: 2rem;
 }
+.producto .producto-informacion .review button {
+  font-size: 1rem;
+  border-radius: 20px;
+  background-color: #ffffff;
+  border: none;
+  padding: 0.5rem;
+  transition: ease all 0.5s;
+}
+.producto .producto-informacion .review button:hover {
+  box-shadow: 0px 0px 5px #68749eeb inset;
+}
+.producto .producto-informacion .review button.hidden {
+  display: none;
+  height: 0;
+}
+.producto .producto-informacion .review button.show {
+  display: block;
+  animation: show-btn 0.5s;
+}
+.producto .producto-informacion .review button.hiddenForever {
+  display: none;
+  height: 0;
+}
+
+@keyframes show-btn {
+  from {
+    height: 0;
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    height: auto;
+    transform: translateY(0px);
+  }
+}

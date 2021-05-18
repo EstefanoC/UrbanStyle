@@ -35,7 +35,7 @@ class Categories extends Component {
         let itemsId = []
         let itemsDropdown = []
         let itemsDropdownId = []
-    
+
         refer.onSnapshot((querySnapshot) => {
             querySnapshot.forEach((doc) => {
                 let id = doc.ref.id
@@ -74,7 +74,7 @@ class Categories extends Component {
                     name: [...this.state.name, value.name],
                     icon: [...this.state.icon, value.icon],
                     gender: [...this.state.gender, value.gender]
-                })   
+                })
             })
 
 
@@ -96,12 +96,12 @@ class Categories extends Component {
     render() {
         return (
             <ul className="nav justify-content-left d-flex flex-column list-unstyled">
-                <CategoriesList 
-                id={this.state.id} 
-                name={this.state.name} 
-                icon={this.state.icon} 
-                gender={this.state.gender} 
-                dropdown={this.state.dropdown} 
+                <CategoriesList
+                id={this.state.id}
+                name={this.state.name}
+                icon={this.state.icon}
+                gender={this.state.gender}
+                dropdown={this.state.dropdown}
                 load={this.state.load}
                 switchState={this.props.switchState}
                 />

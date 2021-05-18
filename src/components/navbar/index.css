@@ -686,6 +686,7 @@
   position: fixed;
   margin: auto;
   top: 8%;
+  z-index: 1000;
 }
 .page-content-active .nav-horizont div button#nav-collapse:active {
   animation: alternate toggler-opacity ease 0.5s;

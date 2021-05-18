@@ -113,7 +113,7 @@ const reducer = (state = initialState, {type, navbar, e, inputData}) => {
                     switch: {
                         male: !navbar.switch.male,
                         unisex: !navbar.switch.unisex,
-                        female: navbar.switch.female,   
+                        female: navbar.switch.female,
                         class: "px-2 switch-style d-flex justify-content-between align-items-center switch-neutro-boy"
                     }
                 }
@@ -122,7 +122,7 @@ const reducer = (state = initialState, {type, navbar, e, inputData}) => {
                     ...state,
                     switch: {
                         male: navbar.switch.male,
-                        unisex: !navbar.switch.unisex,       
+                        unisex: !navbar.switch.unisex,
                         female: !navbar.switch.female,
                         class: "px-2 switch-style d-flex justify-content-between align-items-center switch-neutro-girl"
                     }
@@ -135,7 +135,7 @@ const reducer = (state = initialState, {type, navbar, e, inputData}) => {
                     ...state,
                     switch: {
                         male: navbar.switch.male,
-                        unisex: !navbar.switch.unisex,       
+                        unisex: !navbar.switch.unisex,
                         female: !navbar.switch.female,
                         class: "px-2 switch-style d-flex justify-content-between align-items-center switch-girl"
                     }
@@ -145,7 +145,7 @@ const reducer = (state = initialState, {type, navbar, e, inputData}) => {
                     ...state,
                     switch: {
                         male: !navbar.switch.male,
-                        unisex: navbar.switch.unisex,       
+                        unisex: navbar.switch.unisex,
                         female: !navbar.switch.female,
                         class: "px-2 switch-style d-flex justify-content-between align-items-center switch-girl-in-boy"
                     }

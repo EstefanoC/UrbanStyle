@@ -36,7 +36,7 @@ class Navbar extends Component {
                 <NavbarHorizontal />
 
                     <section className="container-fluid banner">
-                        
+
                             <div className="row nav-horizont d-flex justify-content-between align-items-center pl-0 pt-3">
 
                                 <div className="col-1 px-0">
@@ -54,7 +54,7 @@ class Navbar extends Component {
                                 </div>
 
                                 <div className="col-6 col-lg-5 px-0">
-                                    <Tools 
+                                    <Tools
                                     search="search"
                                     />
                                 </div>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 
 // Redux
 import { connect } from 'react-redux'
@@ -17,7 +17,6 @@ const FilterForm = ({match, load, dbState, productFilter, navbar, handleOnChange
         gender: "unisex"
     })
 
-
     const handleOnChangeInput = (e) => {
         const { name, value } = e.target
         setFormValue({...formValue, [name]: value})
@@ -30,7 +29,7 @@ const FilterForm = ({match, load, dbState, productFilter, navbar, handleOnChange
     }
 
 
-    const getFilterProducts = (gen, pric) => {
+    const getFilterProducts = useCallback((gen, pric) => {
         const nameGeneric = productFilter.name.trim().toLowerCase().toString()
         const genderGeneric = gen
         const priceGeneric = parseInt(pric)
@@ -44,15 +43,15 @@ const FilterForm = ({match, load, dbState, productFilter, navbar, handleOnChange
             const tagFilter = dbState.tag[i].trim().toLowerCase()
             const genderFilter = dbState.gender[i].trim().toLowerCase()
             const priceFilter = dbState.price[i]
-            
-            if (nameGeneric.normalize('NFD').replace(/[\u0300-\u0301]/g, "") === "" || tagFilter.includes(nameGeneric.normalize('NFD').replace(/[\u0300-\u0301]/g, "")) === "") {
+
+            if (nameGeneric.normalize('NFD').replace(/[\u0300-\u0301]/g, "") === "" || tagFilter.includes(nameGeneric.replace(/[\u0300-\u0301]/g, "")) === "") {
                 if (priceFilter < priceGeneric) {
                     if (genderFilter === genderGeneric || genderGeneric === "unisex" || genderFilter === "unisex") {
                         return setProductFilterFinish((val) => [...val, value] )
                     }
                 }
             } else {
-                if (nameFilter.includes(nameGeneric.normalize('NFD').replace(/[\u0300-\u0301]/g, "")) ||  tagFilter.includes(nameGeneric.normalize('NFD').replace(/[\u0300-\u0301]/g, ""))) {
+                if (nameFilter.includes(nameGeneric.normalize('NFD').replace(/[\u0300-\u0301]/g, "")) ||  tagFilter.includes(nameGeneric.replace(/[\u0300-\u0301]/g, ""))) {
                     if (priceFilter < priceGeneric || isNaN(priceGeneric)) {
                         if (genderFilter === genderGeneric || genderGeneric === "unisex" || genderFilter === "unisex" || genderGeneric === undefined) {
                             return setProductFilterFinish((val) => [...val, value] )
@@ -61,7 +60,9 @@ const FilterForm = ({match, load, dbState, productFilter, navbar, handleOnChange
                 }
             }
         })
-    }
+    },
+    [dbState, productFilter],
+)
 
 
     const handleOnReset = () => {
@@ -85,10 +86,10 @@ const FilterForm = ({match, load, dbState, productFilter, navbar, handleOnChange
     useEffect( () => {
         if (load) {
             if (match.params.name) {
-            getFilterProducts(formValue.gender, formValue.price)
+                getFilterProducts(formValue.gender, formValue.price)
+            }
         }
-    }
-    }, [load, match.params.name])
+    }, [load, match.params.name, formValue.gender, formValue.price, getFilterProducts])
 
 
     return(

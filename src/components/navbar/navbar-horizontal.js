@@ -36,12 +36,12 @@ class NavbarHorizontal extends Component {
 
         if(position > this.props.navbar.horizontal.scrollLimit) {
             this.props.changeToggler(this.props.navbar)
-            
+
             if(position > this.state.positionScroll) {
                 return this.setState({
                     positionScroll: position,
                     hidden: "off-scroll"
-                    })            
+                    })
             } else {
                 return this.setState({
                     positionScroll: position,
@@ -73,7 +73,7 @@ class NavbarHorizontal extends Component {
                     </div>
 
                     <div className="col-6 col-lg-6 px-0">
-                        <Tools 
+                        <Tools
                         search="search1"
                         />
                     </div>

@@ -21,7 +21,7 @@ const NavbarVertical = ({navbar}) => {
         </div>
 
         <nav>
-            <Categories 
+            <Categories
                 switchState={navbar.switch}
             />
         </nav>

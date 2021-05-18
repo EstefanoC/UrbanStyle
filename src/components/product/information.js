@@ -14,16 +14,16 @@ const Informacion = (props) => {
         state: false,
         targetReview:"#modal-review"
     })
+    const [reviewForm, setReviewForm] = useState({class: 'hidden', click:0})
 
 
-    const handleClickReview = () => {
-        console.log('funciona')
+    const handleSendReview = () => {
+        setReviewForm({class: 'hiddenForever', click:1})
         setClickReview({
             state: true,
             targetReview: ""
         })
     }
-
 
     return (
         <>
@@ -39,10 +39,10 @@ const Informacion = (props) => {
 
                     <div className="col-4 fav-cart text-right">
                         <div className="d-block">
-                            <Favorite />
+                            <Favorite id={props.dbState.id[props.productId]} name={props.dbState.name[props.productId]} price={props.dbState.price[props.productId]} />
                         </div>
                         <div className="d-block">
-                            <Cart />
+                            <Cart id={props.dbState.id[props.productId]} name={props.dbState.name[props.productId]} price={props.dbState.price[props.productId]} />
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ const Informacion = (props) => {
                 <span className="d-block m-0 mb-3">Quedan: &nbsp; <strong>{props.dbState.stock[props.productId]}</strong> en Stock!</span>
                 <span className="d-block m-0 mb-5">¡Disponible en todas las tallas!</span>
 
-                <p className="text-left">Realiza tú pedido con <span className="text-uppercase">¡Delivery gratis!</span> por tan solo {props.dbState.price[props.productId]}.  Métodos de pago:</p>
+                <p className="text-left">Realiza tú pedido con <span className="text-uppercase">¡Delivery gratis!</span> por tan solo {props.dbState.price[props.productId]}$.  Métodos de pago:</p>
 
                 <div className="d-flex pagos justify-content-between px-3">
                     <span className="fab fa-cc-paypal" title="Paypal"><span className="sr-only">Paypal</span></span>
@@ -62,13 +62,14 @@ const Informacion = (props) => {
 
                 <div className="text-center mt-5 mb-3">
                     <p className="m-0">Puedes Puntuar el producto aqui. ¡Dejanos tú comentario!</p>
-                    <div className="d-inline-block" data-toggle="modal" data-target={clickReview.targetReview.toString()}>
+                    <div className="d-inline-block review" onClick={() => (reviewForm.click === 0) ? setReviewForm('show') : null}>
                         <Review />
+                        <button className={`${reviewForm.class}`} data-toggle="modal" data-target={clickReview.targetReview.toString()}>Envianos tu review</button>
                     </div>
                 </div>
 
-                <ModalInformation 
-                    handleClick={() => handleClickReview()}
+                <ModalInformation
+                    handleClick={() => handleSendReview()}
                 />
 
                 <p className="tags m-0 text-capitalize">

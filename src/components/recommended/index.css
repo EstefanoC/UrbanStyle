@@ -27,6 +27,7 @@
 .recommended .card img {
   border-radius: 20px;
   box-shadow: 0 0 14px -2px #2330619e, 0 5px 10px -2px #233061;
+  height: 200px;
 }
 .recommended .card .card-review {
   border-bottom-left-radius: 20px 20px;

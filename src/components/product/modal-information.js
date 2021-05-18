@@ -17,26 +17,26 @@ const ModalInformation = (props) => {
                             <form className="form-horizontal" method="post">
                                 <fieldset>
 
-                                    <div className="form-group">
-                                        <span className="col-md-1 col-md-offset-2 text-center"><i className="fa fa-user"></i></span>
-                                        <div className="col-md-8">
-                                            <input id="name" name="Name" type="text" placeholder="Nombre" className="form-control" />
+                                        <div className="form-group">
+                                            <span className="col-md-1 col-md-offset-2 text-center"><i className="fa fa-user"></i></span>
+                                            <div className="col">
+                                                <input id="name" name="Name" type="text" placeholder="Nombre" className="form-control" />
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div className="form-group">
-                                        <span className="col-md-1 col-md-offset-2 text-center"><i className="fa fa-envelope"></i></span>
-                                        <div className="col-md-8">
-                                            <input id="email" name="Email" type="text" placeholder="Dirección de Email" className="form-control" />
+                                        <div className="form-group">
+                                            <span className="col-md-1 col-md-offset-2 text-center"><i className="fa fa-envelope"></i></span>
+                                            <div className="col">
+                                                <input id="email" name="Email" type="text" placeholder="Dirección de Email" className="form-control" />
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div className="form-group">
-                                        <span className="col-md-1 col-md-offset-2 text-center"><i className="fa fa-comments"></i></span>
-                                        <div className="col-md-8">
-                                            <textarea className="form-control" id="message" name="Mensaje" placeholder="Envia tu opnion acerca de nosotros" rows="7"></textarea>
+                                        <div className="form-group">
+                                            <span className="col-md-1 col-md-offset-2 text-center"><i className="fa fa-comments"></i></span>
+                                            <div className="col">
+                                                <textarea className="form-control" id="message" name="Mensaje" placeholder="Envia tu opnion acerca de nosotros" rows="7"></textarea>
+                                            </div>
                                         </div>
-                                    </div>
 
                                     <div className="modal-footer">
                                         <button type="button" className="btn btn-secondary" data-dismiss="modal">Omitir</button>

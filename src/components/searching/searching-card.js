@@ -45,10 +45,9 @@ class SearchingCard extends Component {
         }
     }
 
-
     render () {
         if (!this.props.load) {
-            return <Loading load={false}/>
+            return <div className="bg-primary"><Loading load={false}/></div>
         } else {
             if (this.props.filter.length) {
                 return (
@@ -56,13 +55,13 @@ class SearchingCard extends Component {
                         {this.props.filter.slice(0, this.state.quantityLoad.number).map( (value, i) => {
                             userImage = require(`../../media/productos${value.toString()}.jpg`).default
                             heightLoad.push("200px")
-                            
+
                             return (
                                 <article className="col-12 col-sm-5 col-md-3 col-lg-2 card mb-3 bg-primary text-light" key={this.props.dbState.id[value-1]} >
                                     <figure>
                                         <div className="card-top">
-                                            <Favorite />
-                                            <Cart />
+                                        <Favorite id={this.props.dbState.id[value-1]} name={this.props.dbState.name[value-1]} price={this.props.dbState.price[value-1]} />
+                                        <Cart id={this.props.dbState.id[value-1]} name={this.props.dbState.name[value-1]} price={this.props.dbState.price[value-1]}/>
                                             <LazyLoadImage
                                                 className="card-img-top img-fluid"
                                                 alt={this.props.dbState.name[value-1]}
@@ -83,10 +82,11 @@ class SearchingCard extends Component {
                                 </article>
                             )
                         })}
-                        {(this.props.filter.length > this.state.quantityLoad.number) ? 
-                            <input type="button" value="Cargar más" className="btn btn-lg btn-success w-100 mx-5" style={ (this.state.quantityLoad.class) ? {display: 'none'} : {display: 'block'} } onClick={() => { this.onClickLoadMore(this.props.filter.length)}}/>
-                        :
-                            <></>
+                        {
+                            (this.props.filter.length > this.state.quantityLoad.number) ?
+                                <input type="button" value="Cargar más" className="btn btn-lg btn-success w-100 mx-5" onClick={() => { this.onClickLoadMore(this.props.filter.length)}}/>
+                            :
+                                <></>
                         }
                     </>
                 )
@@ -101,8 +101,8 @@ class SearchingCard extends Component {
                                 <article className="col-12 col-sm-5 col-md-3 col-lg-2 card mb-3 bg-primary text-light" key={this.props.dbState.id[value-1]} >
                                     <figure>
                                         <div className="card-top">
-                                            <Favorite />
-                                            <Cart />
+                                            <Favorite id={this.props.dbState.id[value-1]} name={this.props.dbState.name[value-1]} price={this.props.dbState.price[value-1]} />
+                                            <Cart id={this.props.dbState.id[value-1]} name={this.props.dbState.name[value-1]} price={this.props.dbState.price[value-1]} />
                                             <LazyLoadImage
                                                 className="card-img-top img-fluid"
                                                 alt={this.props.dbState.name[value-1]}
@@ -118,12 +118,14 @@ class SearchingCard extends Component {
                                                 <p className="card-title text-uppercase">{this.props.dbState.name[value-1]}</p>
                                             </Link>
                                             <strong className="card-text ml-2">{this.props.dbState.price[value-1]}$</strong>
-                                        </figcaption> 
+                                        </figcaption>
                                     </figure>
                                 </article>
                             )
                         })}
-                        <input type="button" value="Cargar más" className="btn btn-lg btn-success w-100 mx-5" style={ (this.state.quantityLoad.class) ? {display: 'none'} : {display: 'block'} } onClick={() => { this.onClickLoadMore(this.props.dbState.id.length)}}/>
+                        {
+                            <input type="button" value="Cargar más" className="btn btn-lg btn-success w-100 mx-5" onClick={() => { this.onClickLoadMore(this.props.dbState.id.length)}}/>
+                        }
                     </>
                 )
             }

@@ -19,7 +19,7 @@ const averageNow = (ave) => {
                     <span className="star-empty"></span>
                     <span className="star-empty"></span>
                 </div>
-            ) 
+            )
         case ave <= 0.7:
             return (
                     <div className="review-static d-flex justify-content-center align-items-center">
@@ -49,7 +49,7 @@ const averageNow = (ave) => {
                     <span className="fas fa-star-half-alt"></span>
                     <span className="fas fa-star"></span>
                 </div>
-            ) 
+            )
         case ave <= 2.2:
             return (
                 <div className="review-static d-flex justify-content-center align-items-center">
@@ -59,7 +59,7 @@ const averageNow = (ave) => {
                     <span className="fas fa-star"></span>
                     <span className="fas fa-star"></span>
                 </div>
-            ) 
+            )
         case ave <= 2.7:
             return (
             <div className="review-static d-flex justify-content-center align-items-center">
@@ -100,7 +100,7 @@ const averageNow = (ave) => {
                     <span className="fas fa-star"></span>
                 </div>
             )
-        case ave <= 4.6: 
+        case ave <= 4.6:
             return (
                 <div className="review-static d-flex justify-content-center align-items-center">
                     <span className="fas fa-star-half-alt"></span>
@@ -135,7 +135,6 @@ const averageNow = (ave) => {
 
 
 const Review = ({staticStar, staticAverage, review, setReviewResult}) => {
-    
 
     if (staticStar) {
         return(

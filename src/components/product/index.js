@@ -19,7 +19,7 @@ const Product = (props) => {
 
 
     if (!props.load) {
-        return <Loading load={props.load} />
+        return <div className="bg-primary"><Loading load={props.load} /></div>
     } else {
         userImage = require(`../../media/productos${props.dbState.id[id].toString()}.jpg`).default
 
@@ -36,12 +36,12 @@ const Product = (props) => {
                             </div>
 
                             <div className="col-12 col-md-6 producto-informacion bg-secondary px-4 pt-4 pb-1">
-                                <Informacion 
+                                <Informacion
                                 productId = {id}
                                 dbState = {props.dbState}
                                 />
                             </div>
-                            
+
                         </div>
                     </div>
             </section>
