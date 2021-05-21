@@ -22,8 +22,10 @@ import Productos from '../pages/products'
 import Error404 from '../pages/error404'
 import Loading from '../components/helpers/loading'
 import Cart from '../pages/cart.js'
+import Thanks from '../pages/thanks.js'
 import Favorite from '../pages/favorite.js'
 import User from '../pages/user.js'
+import Payment from '../pages/payment.js'
 
 const Index = () => {
     const [load, setLoad] = useState(false)
@@ -47,17 +49,23 @@ const Index = () => {
                         <Route path='/producto/:id'>
                             <Productos />
                         </Route>
-                        <Route path='/buscador'>
-                            <Buscador />
-                        </Route>
-                        <Route path='/carrito'>
-                            <Cart />
+                        <Route path='/carrito/gracias'>
+                            <Thanks />
                         </Route>
                         <Route path='/favoritos'>
                             <Favorite />
                         </Route>
+                        <Route path='/buscador'>
+                            <Buscador />
+                        </Route>
                         <Route path='/registro'>
                             <User />
+                        </Route>
+                        <Route path='/carrito'>
+                            <Cart />
+                        </Route>
+                        <Route path='/pago'>
+                            <Payment />
                         </Route>
                         <Route path='/'>
                             <Home />

@@ -1,0 +1,31 @@
+/*---------------------------------------------------------------------------------------------------------------
+
+                                        Payment
+
+---------------------------------------------------------------------------------------------------------------*/
+
+.payment .payment-form {
+    border: 1px solid #68749e;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px -1px #2330618b;
+}
+.payment .payment-product {
+    background-color: #68749ea0;
+    border: 1px solid #68749e;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px -1px #2330618b;
+}
+.payment .payment-product .product-item {
+    border: 1px solid #68749e40;
+    border-radius: 1rem;
+    background-color: #23306121;
+    color: white;
+}
+.payment .payment-product .product-item a {
+    color: white;
+    text-decoration: none;
+}
+.payment .payment-product .product-item a:hover {
+    color: rgb(162, 167, 228);
+    text-decoration: none;
+}

@@ -24,7 +24,7 @@ const CarouselItems = () => {
                                 {
                                     Object.keys(CarouselData[value].list).map((value1, index) => {
                                         id++
-                                       return <li key={`${id}${index}`}><p><span className="fas fa-star mr-3"></span>{CarouselData[value].list[value1]}</p></li>
+                                        return <li key={`${id}${index}`}><p><span className="fas fa-star mr-3"></span>{CarouselData[value].list[value1]}</p></li>
                                     })
                                 }
                             </ul>
