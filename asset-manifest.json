@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/UrbanStyle/static/css/main.c44c92be.chunk.css",
-    "main.js": "/UrbanStyle/static/js/main.99484e38.chunk.js",
-    "main.js.map": "/UrbanStyle/static/js/main.99484e38.chunk.js.map",
+    "main.css": "/UrbanStyle/static/css/main.7e7c40f8.chunk.css",
+    "main.js": "/UrbanStyle/static/js/main.23ea4478.chunk.js",
+    "main.js.map": "/UrbanStyle/static/js/main.23ea4478.chunk.js.map",
     "runtime-main.js": "/UrbanStyle/static/js/runtime-main.d18ec3e6.js",
     "runtime-main.js.map": "/UrbanStyle/static/js/runtime-main.d18ec3e6.js.map",
     "static/css/2.2b387150.chunk.css": "/UrbanStyle/static/css/2.2b387150.chunk.css",
-    "static/js/2.665a305e.chunk.js": "/UrbanStyle/static/js/2.665a305e.chunk.js",
-    "static/js/2.665a305e.chunk.js.map": "/UrbanStyle/static/js/2.665a305e.chunk.js.map",
+    "static/js/2.15509ccc.chunk.js": "/UrbanStyle/static/js/2.15509ccc.chunk.js",
+    "static/js/2.15509ccc.chunk.js.map": "/UrbanStyle/static/js/2.15509ccc.chunk.js.map",
     "index.html": "/UrbanStyle/index.html",
     "static/css/2.2b387150.chunk.css.map": "/UrbanStyle/static/css/2.2b387150.chunk.css.map",
-    "static/css/main.c44c92be.chunk.css.map": "/UrbanStyle/static/css/main.c44c92be.chunk.css.map",
-    "static/js/2.665a305e.chunk.js.LICENSE.txt": "/UrbanStyle/static/js/2.665a305e.chunk.js.LICENSE.txt",
+    "static/css/main.7e7c40f8.chunk.css.map": "/UrbanStyle/static/css/main.7e7c40f8.chunk.css.map",
+    "static/js/2.15509ccc.chunk.js.LICENSE.txt": "/UrbanStyle/static/js/2.15509ccc.chunk.js.LICENSE.txt",
     "static/media/index.css": "/UrbanStyle/static/media/heart-icon.8cf2f0bf.png",
     "static/media/gallery1.jpg": "/UrbanStyle/static/media/gallery1.bf848b27.jpg",
     "static/media/gallery2.jpg": "/UrbanStyle/static/media/gallery2.f3b72a4e.jpg",
@@ -22,6 +22,7 @@
     "static/media/gallery7.jpg": "/UrbanStyle/static/media/gallery7.f12e110f.jpg",
     "static/media/gallery8.jpg": "/UrbanStyle/static/media/gallery8.47f5db42.jpg",
     "static/media/gallery9.jpg": "/UrbanStyle/static/media/gallery9.70f632ef.jpg",
+    "static/media/icons-map.7783f494.webp": "/UrbanStyle/static/media/icons-map.7783f494.webp",
     "static/media/productos1.jpg": "/UrbanStyle/static/media/productos1.aa883af1.jpg",
     "static/media/productos10.jpg": "/UrbanStyle/static/media/productos10.9137ec9b.jpg",
     "static/media/productos11.jpg": "/UrbanStyle/static/media/productos11.416b4337.jpg",
@@ -80,8 +81,8 @@
   "entrypoints": [
     "static/js/runtime-main.d18ec3e6.js",
     "static/css/2.2b387150.chunk.css",
-    "static/js/2.665a305e.chunk.js",
-    "static/css/main.c44c92be.chunk.css",
-    "static/js/main.99484e38.chunk.js"
+    "static/js/2.15509ccc.chunk.js",
+    "static/css/main.7e7c40f8.chunk.css",
+    "static/js/main.23ea4478.chunk.js"
   ]
 }
