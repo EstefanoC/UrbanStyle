@@ -1,12 +1,6 @@
 import React from 'react'
-
-// Redux
 import { connect } from 'react-redux'
-
-// React-Router
 import { withRouter } from 'react-router-dom'
-
-// Components
 import ToolsStore from '../toolsStore/index.js'
 
 

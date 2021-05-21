@@ -1,9 +1,5 @@
 import React from 'react'
-
-// React-reouter
 import { Link } from 'react-router-dom'
-
-// helpers
 import SocialMedia from '../helpers/socialMedia'
 
 const FooterIcon = () => (

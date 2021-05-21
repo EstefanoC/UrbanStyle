@@ -1,12 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react'
-
-// Redux
 import { connect } from 'react-redux'
-
-// Component
 import SearchingCard from './searching-card'
-
-// React-Router
 import { withRouter } from 'react-router-dom'
 
 

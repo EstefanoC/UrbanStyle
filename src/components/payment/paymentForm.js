@@ -1,12 +1,6 @@
 import React, { useState, useRef } from 'react'
-
-// React-Router
 import { useHistory } from 'react-router-dom'
-
-// Paypal
 import { PayPalButton } from 'react-paypal-button-v2'
-
-// Components
 import Alert from '../helpers/alert'
 
 const PaymentForm = ({ disabled, finish }) => {
@@ -145,11 +139,8 @@ const PaymentForm = ({ disabled, finish }) => {
                                 <div className="col-12 mt-5">
                                     <PayPalButton
                                         amount={finish.toString()}
-                                        // shippingPreference="NO_SHIPPING" // default is "GET_FROM_FILE"
                                         onSuccess={(details) => {
                                             Submit(details, "paypal success")
-
-                                            // OPTIONAL: Call your server to save the transaction
                                             return fetch("/paypal-transaction-complete", {
                                                 method: "post",
                                                 body: JSON.stringify({

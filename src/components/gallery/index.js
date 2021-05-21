@@ -1,12 +1,6 @@
 import React, { Component } from 'react'
-
-// Style
 import './index.css'
-
-// Data firebase
 import { firestore } from '../../data/firebase'
-
-// Components
 import GalleryItems from './gallery-items'
 
 

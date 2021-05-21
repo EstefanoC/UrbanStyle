@@ -1,11 +1,7 @@
 import React, { useState } from 'react'
-
-// Helpers
 import Favorite from '../helpers/favorite'
 import Cart from '../helpers/cart'
 import Review from '../helpers/review'
-
-// Component
 import ModalInformation from './modal-information'
 
 

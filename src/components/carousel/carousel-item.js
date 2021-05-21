@@ -1,6 +1,4 @@
 import React from 'react'
-
-// Components
 import CarouselData from './carousel'
 
 

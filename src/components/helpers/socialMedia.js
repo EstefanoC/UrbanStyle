@@ -1,6 +1,4 @@
 import React from 'react'
-
-// css
 import './index.css'
 
 const redesSociales = {
@@ -16,7 +14,7 @@ const SocialMedia = () => {
             <li className="mx2"><a href={redesSociales.Instagram}><span className="sr-only">Instagram</span><i className="fab fa-instagram" title="Instagram"></i></a></li>
             <li className="mx2"><a href={redesSociales.Youtube}><span className="sr-only">Youtube</span><i className="fab fa-youtube" title="Youtube"></i></a></li>
         </ul>
-     )
+    )
 }
 
 export default SocialMedia

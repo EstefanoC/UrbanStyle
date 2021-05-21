@@ -1,9 +1,5 @@
 import React from 'react'
-
-// Redux
 import { connect } from 'react-redux'
-
-// Component
 import Switch from './switch.js'
 import Categories from './categories'
 

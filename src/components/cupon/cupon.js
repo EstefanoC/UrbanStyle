@@ -1,6 +1,4 @@
 import React from 'react'
-
-// Components
 import CuponForm from './cupon-form'
 
 

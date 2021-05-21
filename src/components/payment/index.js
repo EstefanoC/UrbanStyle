@@ -1,11 +1,7 @@
 import React from 'react'
-
-// Components
 import Loading from '../helpers/loading'
 import PaymentForm from './paymentForm'
 import PaymentProduct from './paymentProduct'
-
-// Style
 import './index.css'
 import { useState } from 'react'
 

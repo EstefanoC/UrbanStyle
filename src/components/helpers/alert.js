@@ -1,7 +1,5 @@
 import React from 'react'
 import reactDom from 'react-dom';
-
-// Style
 import './index.css'
 
 

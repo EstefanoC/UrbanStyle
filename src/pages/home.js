@@ -1,9 +1,5 @@
 import React from 'react'
-
-// Redux
 import { connect } from 'react-redux'
-
-// component
 import Navbar from '../components/navbar/'
 import Carousel from '../components/carousel/'
 import Recommended from '../components/recommended/'

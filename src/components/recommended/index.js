@@ -1,13 +1,7 @@
 import React, { Component } from 'react'
-
-// Styles
 import './index.css'
-
-// Data firebase
 import { firestore } from '../../data/firebase'
 import "firebase/firestore";
-
-// Components
 import RecommendedCard from './recommendedCard'
 
 

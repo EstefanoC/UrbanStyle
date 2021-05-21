@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from 'react';
-
-// Firebase
 import { auth } from '../../data/firebase';
 import firebase from 'firebase/app';
 import "firebase/auth";
-
-// Component
 import Loading from '../helpers/loading'
 import Alert from '../helpers/alert'
 

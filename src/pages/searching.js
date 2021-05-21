@@ -1,9 +1,5 @@
 import React from 'react'
-
-// Redux
 import { connect } from 'react-redux'
-
-// component
 import Navbar from '../components/navbar/'
 import Searching from '../components/searching/'
 import Footer from '../components/footer/'

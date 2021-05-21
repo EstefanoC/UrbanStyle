@@ -1,9 +1,5 @@
 import React, { useState } from 'react'
-
-// React-Router
 import { Link } from 'react-router-dom'
-
-// Redux
 import { connect } from 'react-redux'
 
 

@@ -1,6 +1,4 @@
 import React from 'react'
-
-// Component
 import FavoriteContent from './favoritecontent';
 
 const Favorite = () => {
