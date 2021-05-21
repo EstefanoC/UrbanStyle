@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 
+// helmet
+import { Helmet } from 'react-helmet';
+
 // Data firebase
 import { firestore } from '../data/firebase'
 import "firebase/firestore";
@@ -47,13 +50,18 @@ class Favorite extends Component {
 
     render() {
         return(
-            <div className={`${this.props.navbar.page.class} favorite`} id="page-content">
-                <Navbar />
-                <main>
-                    <Favorites load={this.state.load} data={this.state.data} />
-                </main>
-                <Footer />
-            </div>
+            <>
+                <Helmet>
+                    <title>Urban Style | Favoritos</title>
+                </Helmet>
+                <div className={`${this.props.navbar.page.class} favorite`} id="page-content">
+                    <Navbar />
+                    <main>
+                        <Favorites load={this.state.load} data={this.state.data} />
+                    </main>
+                    <Footer />
+                </div>
+            </>
         )
     }
 }

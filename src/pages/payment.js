@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 
+// helmet
+import { Helmet } from 'react-helmet';
+
 // Redux
 import { connect } from 'react-redux'
 
@@ -23,13 +26,18 @@ class Payment extends Component {
 
     render() {
         return(
-            <div className={`${this.props.navbar.page.class} payment`} id="page-content">
-                <Navbar />
-                <main>
-                    <Payments load={this.state.load} />
-                </main>
-                <Footer />
-            </div>
+            <>
+                <Helmet>
+                    <title>Urban Style | Pago</title>
+                </Helmet>
+                <div className={`${this.props.navbar.page.class} payment`} id="page-content">
+                    <Navbar />
+                    <main>
+                        <Payments load={this.state.load} />
+                    </main>
+                    <Footer />
+                </div>
+            </>
         )
     }
 }

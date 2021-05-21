@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 
+// helmet
+import { Helmet } from 'react-helmet';
+
 // Data firebase
 import { firestore } from '../data/firebase'
 import "firebase/firestore";
@@ -56,16 +59,21 @@ class Productos extends Component {
 
     render() {
         return(
-            <div className={this.props.navbar.page.class} id="page-content">
-                <Navbar />
-                <main>
-                    <Product
-                        load={this.state.load}
-                        dbState = {this.state}
-                    />
-                </main>
-                <Footer />
-            </div>
+            <>
+                <Helmet>
+                    <title>Urban Style | Productos</title>
+                </Helmet>
+                <div className={this.props.navbar.page.class} id="page-content">
+                    <Navbar />
+                    <main>
+                        <Product
+                            load={this.state.load}
+                            dbState = {this.state}
+                        />
+                    </main>
+                    <Footer />
+                </div>
+            </>
         )
     }
 }

@@ -1,5 +1,8 @@
 import React from 'react'
 
+// helmet
+import { Helmet } from 'react-helmet';
+
 // Redux
 import { connect } from 'react-redux'
 
@@ -13,13 +16,18 @@ import Footer from '../components/footer/'
 const Buscador = ({navbar}) => {
 
     return (
-        <div className={navbar.page.class} id="page-content">
-            <Navbar />
-            <main>
-                <Searching productFilter={navbar.search}/>
-            </main>
-            <Footer />
-        </div>
+        <>
+            <Helmet>
+                <title>Urban Style | Buscador</title>
+            </Helmet>
+            <div className={navbar.page.class} id="page-content">
+                <Navbar />
+                <main>
+                    <Searching productFilter={navbar.search}/>
+                </main>
+                <Footer />
+            </div>
+        </>
     )
 }
 
