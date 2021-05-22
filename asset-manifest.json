@@ -1,14 +1,16 @@
 {
   "files": {
     "main.css": "/UrbanStyle/static/css/main.af734deb.chunk.css",
-    "main.js": "/UrbanStyle/static/js/main.73580e92.chunk.js",
-    "main.js.map": "/UrbanStyle/static/js/main.73580e92.chunk.js.map",
+    "main.js": "/UrbanStyle/static/js/main.7c8bf782.chunk.js",
+    "main.js.map": "/UrbanStyle/static/js/main.7c8bf782.chunk.js.map",
     "runtime-main.js": "/UrbanStyle/static/js/runtime-main.d18ec3e6.js",
     "runtime-main.js.map": "/UrbanStyle/static/js/runtime-main.d18ec3e6.js.map",
     "static/css/2.2b387150.chunk.css": "/UrbanStyle/static/css/2.2b387150.chunk.css",
     "static/js/2.ac0b92d8.chunk.js": "/UrbanStyle/static/js/2.ac0b92d8.chunk.js",
     "static/js/2.ac0b92d8.chunk.js.map": "/UrbanStyle/static/js/2.ac0b92d8.chunk.js.map",
     "index.html": "/UrbanStyle/index.html",
+    "service-worker.js": "/UrbanStyle/service-worker.js",
+    "service-worker.js.map": "/UrbanStyle/service-worker.js.map",
     "static/css/2.2b387150.chunk.css.map": "/UrbanStyle/static/css/2.2b387150.chunk.css.map",
     "static/css/main.af734deb.chunk.css.map": "/UrbanStyle/static/css/main.af734deb.chunk.css.map",
     "static/js/2.ac0b92d8.chunk.js.LICENSE.txt": "/UrbanStyle/static/js/2.ac0b92d8.chunk.js.LICENSE.txt",
@@ -83,6 +85,6 @@
     "static/css/2.2b387150.chunk.css",
     "static/js/2.ac0b92d8.chunk.js",
     "static/css/main.af734deb.chunk.css",
-    "static/js/main.73580e92.chunk.js"
+    "static/js/main.7c8bf782.chunk.js"
   ]
 }
