@@ -14,10 +14,19 @@ var firebaseConfig = {
 
 const fire = firebase.initializeApp(firebaseConfig)
 const auth = fire.auth()
+var google = new firebase.auth.GoogleAuthProvider();
+var facebook = new firebase.auth.FacebookAuthProvider();
+var twitter = new firebase.auth.TwitterAuthProvider();
+var github = new firebase.auth.GithubAuthProvider();
+
 
 const firestore = firebase.firestore()
 
 export {
   firestore,
-  auth
+  auth,
+  google,
+  facebook,
+  twitter,
+  github
 }

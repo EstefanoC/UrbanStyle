@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 // React router
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 
 // Redux
 import { Provider } from 'react-redux'
@@ -67,7 +67,7 @@ const Index = () => {
                         <Route path='/pago'>
                             <Payment />
                         </Route>
-                        <Route path='/'>
+                        <Route exact path='/'>
                             <Home />
                         </Route>
                         <Route component={Error404} />
