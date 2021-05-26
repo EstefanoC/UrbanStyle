@@ -1,4 +1,9 @@
 import React, { Component } from 'react'
+
+// helmet
+import { Helmet } from 'react-helmet';
+
+// Data firebase
 import firebase from 'firebase/app';
 import "firebase/firestore";
 import { connect } from 'react-redux'
@@ -39,13 +44,18 @@ class User extends Component {
 
     render() {
         return(
-            <div className={`${this.props.navbar.page.class} user`} id="page-content">
-                <Navbar />
-                <main>
-                    <Users user={this.state.data} />
-                </main>
-                <Footer />
-            </div>
+            <>
+                <Helmet>
+                    <title>Urban Style | Registro </title>
+                </Helmet>
+                <div className={`${this.props.navbar.page.class} user`} id="page-content">
+                    <Navbar />
+                    <main>
+                        <Users user={this.state.data} />
+                    </main>
+                    <Footer />
+                </div>
+            </>
         )
     }
 }

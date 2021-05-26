@@ -1,4 +1,9 @@
 import React from 'react'
+
+// helmet
+import { Helmet } from 'react-helmet';
+
+// Redux
 import { connect } from 'react-redux'
 import Navbar from '../components/navbar/'
 import Carousel from '../components/carousel/'
@@ -9,8 +14,11 @@ import Map from '../components/helpers/map'
 import Footer from '../components/footer/'
 
 
-const Home = ({navbar}) => {
-    return (
+const Home = ({navbar}) => (
+    <>
+        <Helmet>
+            <title>Urban Style</title>
+        </Helmet>
         <div className={navbar.page.class} id="page-content">
             <Navbar />
             <main>
@@ -22,8 +30,8 @@ const Home = ({navbar}) => {
             </main>
             <Footer />
         </div>
-    )
-}
+    </>
+)
 
 const mapStateToProps = state => ({
     navbar: state.navbar

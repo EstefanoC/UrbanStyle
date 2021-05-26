@@ -1,7 +1,11 @@
 import React, { useState, useEffect} from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+
+// React router
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'
+
+// Redux
 import { Provider } from 'react-redux'
 import store from '../data/redux/store'
 import './index.css'
@@ -56,7 +60,7 @@ const Index = () => {
                         <Route path='/pago'>
                             <Payment />
                         </Route>
-                        <Route path='/'>
+                        <Route exact path='/'>
                             <Home />
                         </Route>
                         <Route component={Error404} />

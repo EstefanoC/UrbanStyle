@@ -1,4 +1,9 @@
 import React, { useEffect } from 'react'
+
+// helmet
+import { Helmet } from 'react-helmet';
+
+// React-Router
 import { Link, useHistory } from 'react-router-dom'
 
 
@@ -16,15 +21,20 @@ const Thanks = () => {
     }, [history])
 
     return (
-        <div className="thanks">
-            <div className="d-flex flex-column align-items-center justify-content-start text-center h-100 text-dark">
-                <h1 className="d-block display-1 mb-4">¡Gracias!</h1>
-                <h2>Por comprar con nosotros</h2>
-                <Link to='/'>
-                    <p className="m-0">Volver al Inicio</p>
-                </Link>
+        <>
+            <Helmet>
+                <title>Urban Style | Gracias</title>
+            </Helmet>
+            <div className="thanks">
+                <div className="d-flex flex-column align-items-center justify-content-start text-center h-100 text-dark">
+                    <h1 className="d-block display-1 mb-4">¡Gracias!</h1>
+                    <h2>Por comprar con nosotros</h2>
+                    <Link to='/'>
+                        <p className="m-0">Volver al Inicio</p>
+                    </Link>
+                </div>
             </div>
-        </div>
+        </>
     )
 }
 
