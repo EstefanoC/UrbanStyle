@@ -1,11 +1,6 @@
 import React, { Component } from 'react'
-
-// Data firebase
 import { firestore } from '../../data/firebase'
 import "firebase/firestore";
-
-
-// Component
 import CategoriesList from './categories-list'
 
 

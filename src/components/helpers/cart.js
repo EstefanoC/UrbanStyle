@@ -1,12 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react'
-
-// Firestore
 import { firestore } from '../../data/firebase'
-
-// Component
 import Alert from './alert'
-
-// Style
 import './index.css'
 
 

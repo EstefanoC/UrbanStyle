@@ -1,6 +1,4 @@
 import React from 'react'
-
-// media
 import MapIcon from '../../media/icons-map.webp'
 
 export const Map = () => {

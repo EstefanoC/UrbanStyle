@@ -1,23 +1,12 @@
 import React, { Component } from 'react'
-
-// Redux
 import { connect } from 'react-redux'
-
-// Style
 import './index.css'
-
-// Components
 import NavbarVertical from './navbar-vertical'
 import Toggler from './toggler'
 import SocialMedia from '../helpers/socialMedia'
 import Tools from '../navbar/tools'
 import NavbarHorizontal from './navbar-horizontal'
-
-// React-router.
 import { Link } from 'react-router-dom'
-
-
-// Module
 import CircleType from 'circletype'
 
 

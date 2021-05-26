@@ -1,9 +1,5 @@
 import React from 'react'
-
-// LazyLoad
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-
-// Components
 import GalleryModal from './gallery-modal'
 
 

@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from 'react'
-
-// Firebase
 import { firestore } from '../../data/firebase'
-
-// Components
 import Loading from '../helpers/loading'
 import Products from './products'
 

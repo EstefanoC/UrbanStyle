@@ -1,12 +1,6 @@
 import React from 'react'
-
-// Style
 import './index.css'
-
-// React-Router
 import { useParams } from 'react-router-dom'
-
-// Component
 import Informacion from './information'
 import Loading from '../helpers/loading'
 

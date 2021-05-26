@@ -6,11 +6,7 @@ import { Helmet } from 'react-helmet';
 // Data firebase
 import { firestore } from '../data/firebase'
 import "firebase/firestore";
-
-// Redux
 import { connect } from 'react-redux'
-
-// component
 import Navbar from '../components/navbar'
 import Product from '../components/product'
 import Footer from '../components/footer'

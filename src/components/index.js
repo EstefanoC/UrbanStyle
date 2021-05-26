@@ -1,6 +1,4 @@
 import React, { useState, useEffect} from 'react'
-
-// Dependencias
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
@@ -9,13 +7,8 @@ import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 
 // Redux
 import { Provider } from 'react-redux'
-// ReduxData
 import store from '../data/redux/store'
-
-// Style
 import './index.css'
-
-// Pages
 import Home from '../pages/home'
 import Buscador from '../pages/searching'
 import Productos from '../pages/products'

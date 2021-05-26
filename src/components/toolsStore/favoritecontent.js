@@ -1,12 +1,6 @@
 import React, { useState, useEffect } from 'react'
-
-// Firebase
 import { firestore } from '../../data/firebase'
-
-// React router
 import { Link } from 'react-router-dom'
-
-// Component
 import Loading from '../helpers/loading'
 import Alert from '../helpers/alert'
 

@@ -1,9 +1,5 @@
 import React from 'react'
-
-// Components
 import CarouselItems from './carousel-item'
-
-// Style
 import './index.css'
 
 

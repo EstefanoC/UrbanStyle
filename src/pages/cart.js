@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-
-// Redux
 import { connect } from 'react-redux'
 
 // helmet

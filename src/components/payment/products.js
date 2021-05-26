@@ -1,6 +1,4 @@
 import React from 'react'
-
-// React router
 import { Link } from 'react-router-dom'
 
 

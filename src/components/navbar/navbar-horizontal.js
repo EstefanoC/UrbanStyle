@@ -1,12 +1,6 @@
 import React, { Component } from 'react'
-
-// Redux
 import { connect } from 'react-redux'
-
-// React-router
 import { Link } from 'react-router-dom'
-
-// Components
 import Toggler from './toggler'
 import Tools from '../navbar/tools'
 

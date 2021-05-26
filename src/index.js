@@ -6,8 +6,6 @@ import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 // Component
 import Index from './components/';
-
-// Styles
 import './normalize.css'
 import './index.css'
 

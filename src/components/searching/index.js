@@ -1,13 +1,7 @@
 import React, { Component } from 'react'
-
-// Style
 import './index.css'
-
-// Data firebase
 import { firestore } from '../../data/firebase'
 import "firebase/firestore";
-
-// Component
 import Cupon from '../cupon/index.js'
 import FilterForm from './filter-form'
 

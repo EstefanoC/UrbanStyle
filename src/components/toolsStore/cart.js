@@ -1,9 +1,5 @@
 import React, { useState } from 'react'
-
-// React=router
 import { Link } from 'react-router-dom';
-
-// Component
 import CartContent from './cartContent';
 
 const Cart = () => {

@@ -1,9 +1,5 @@
 import React from 'react'
-
-// Components
 import Cupon from './cupon'
-
-// Style
 import './index.css'
 
 const Index = () => (

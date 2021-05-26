@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-
-// Component
 import UserContent from './usercontent';
 
 const User = ({ user }) => {

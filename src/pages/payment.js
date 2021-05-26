@@ -5,8 +5,6 @@ import { Helmet } from 'react-helmet';
 
 // Redux
 import { connect } from 'react-redux'
-
-// component
 import Navbar from '../components/navbar'
 import Payments from '../components/payment/index.js'
 import Footer from '../components/footer'

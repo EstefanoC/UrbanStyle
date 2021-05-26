@@ -1,9 +1,5 @@
 import React from 'react'
-
-// Redux
 import { connect } from 'react-redux'
-
-// Style
 import './index.css'
 
 

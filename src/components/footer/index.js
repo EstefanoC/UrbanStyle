@@ -1,10 +1,6 @@
 import React from 'react'
-
-// Components
 import FooterNav from './footer-nav'
 import FooterIcon from './footer-icon'
-
-// Style
 import './index.css'
 
 
